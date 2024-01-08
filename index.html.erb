@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <form action="/" method="post">
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message">
+        <input type="submit" value="Submit">
+    </form>
+    <% if @@messages.any? %>
+        <h2>Posted Messages</h2>
+            <ul>
+                <% @@messages.each do |message| %>
+                <li><%= message %></li>
+                <% end %>
+            </ul>
+    <% end %>
+</body>
+</html>
