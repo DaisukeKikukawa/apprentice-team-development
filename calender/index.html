@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>カレンダーとメモ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>学習記録</h1>
+    <div>
+        <select id="month-select"></select>
+        <select id="year-select"></select>
+    </div>
+    <div id="currentMonthYear" style="margin-top: 10px;"></div>
+    <div class="container">
+        <div id="calendar" class="calendar-grid"></div>
+        <div class="memo-editor">
+            <textarea id="memo-text" rows="10" cols="30"></textarea>
+            <button id="save-memo">保存</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

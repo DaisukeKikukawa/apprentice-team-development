@@ -1,0 +1,20 @@
+/* スタイルの追加 */
+.container {
+  display: flex;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-day {
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.memo-editor {
+  margin-left: 20px;
+}
